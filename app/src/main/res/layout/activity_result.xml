@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ResultActivity"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/result_title"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#ca19ea"
+        android:text="@string/result_title"/>
+
+    <TextView
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/user"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/result_title"
+        android:textSize="20dp"
+        android:textColor="#ca19ea"
+        android:text="user" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/result_title"
+        android:layout_toRightOf="@+id/user"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="@string/you_have"/>
+
+    <TextView
+        android:id="@+id/correct_result_title"
+        android:layout_marginTop="30dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/user"
+        android:textStyle="bold"
+        android:textColor="#ca19ea"
+        android:text="@string/correct_result"/>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:id="@+id/correct_result_value"
+        android:layout_width="20dp"
+        android:layout_below="@+id/user"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/correct_result_title"
+        android:text="c"/>
+
+    <TextView
+        android:id="@+id/wrong_result_title"
+        android:layout_marginTop="30dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/correct_result_title"
+        android:textColor="#ca19ea"
+        android:text="@string/wrong_result"/>
+
+    <TextView
+        android:id="@+id/wrong_result_value"
+        android:layout_width="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/correct_result_value"
+        android:layout_toRightOf="@id/wrong_result_title"
+        android:text="w"/>
+
+    <TextView
+        android:id="@+id/cheat_result_title"
+        android:layout_marginTop="30dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/wrong_result_title"
+        android:textColor="#ca19ea"
+        android:text="@string/cheated_result"/>
+
+    <TextView
+        android:id="@+id/cheat_result_value"
+        android:layout_width="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wrong_result_value"
+        android:layout_toRightOf="@id/cheat_result_title"
+        android:text="ch"/>
+
+    <Button
+        android:id="@+id/try_again_btn"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/cheat_result_title"
+        android:background="#ca19ea"
+        android:textColor="#ffffff"
+        android:text="@string/try_again"/>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/try_again_btn"
+        android:background="#ca19ea"
+        android:textColor="#ffffff"
+        android:text="@string/logout_btn"/>
+
+</RelativeLayout>
